@@ -7,3 +7,4 @@ histories
 pickled_dataframes
 pickled_detected_bursts
 tfrecords
+wandb
