@@ -8,3 +8,4 @@ pickled_dataframes
 pickled_detected_bursts
 tfrecords
 wandb
+results_figures
