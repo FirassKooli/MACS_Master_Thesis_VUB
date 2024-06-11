@@ -9,3 +9,8 @@ pickled_detected_bursts
 tfrecords
 wandb
 results_figures
+Old_Classification_Notebooks
+Old_Classification_Notebooks/testing_graphs.ipynb
+Add after defence/submit.sh
+Add after defence/HYDRA_Script_7_Muscle_Identification.py
+Add after defence

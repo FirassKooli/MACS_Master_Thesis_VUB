@@ -14,16 +14,14 @@ This repository contains the code and accompanying materials for my thesis proje
 - tfrecords: contains the datasets to be used for the training. 
 
 
-## Notebooks
-- `Comparing_New_vs_Old_Datasets.ipynb`: Compares the new ENABLES dataset with tthe previous one collected by Esteban.
-- `Preprocessing_and_Muscle_Classification_2_Muscles.ipynb`: *[Not Important]* Old File for Preprocessing steps and muscle classification model for classifying 2 muscles only. Was used in early stages to test the code and make it work.
-- `Preprocessing_and_Muscle_Classification_7_Muscles.ipynb`: *[Interesting]* "stable" file where i save the good results and improvements.
-- `Preprocessing_and_Muscle_Classification_14_Muscles.ipynb`: *[Not Important]* Old File for Preprocessing steps and muscle classification model for classifying 14 muscles (7 x 2 sides). Was used in early stages to test the model and it did horrible.
-- `Testing_Preprocessing_and_Muscle_Classification_7_Muscles.ipynb`: *[Most Interesting]* Test file where i test the new features and models.  
-- `Testing_New_Burst_Detections.ipynb`: Testing 3 algorithms for new burst detection from sEMG.
-- `Testing_Pretraining.ipynb`: place holder file, nothing interesting yet.
+## Notebook
+- `Preprocessing_and_7_Muscle_Identification.ipynb`: OG code: Data Loading, Visualisation, Preprocessing, TFRecords Creation, Model Training and Results Visualisation. 
 
-## Notebooks Structure 
+## Hydra Script
+- `HYDRA_Script_7_Muscle_Identification.py`: Script to run the model on Hydra.
+- `submit.sh`: Submit script used to run the model's job on hydra (super helpful as packages on hydra are tricky!) 
+
+## Notebook Structure 
 - Generating dataframes from the EMG csv files 
    - Generating pickled dataframes 
    - Visualising the EMG signal 
@@ -36,7 +34,7 @@ This repository contains the code and accompanying materials for my thesis proje
    - Analysing the detected bursts
 - TFrecords creation
    - Separating the LOO subject
-   - Extracting 300ms burst windows
+   - Extracting 1000ms burst windows
    - Creating the tfrecords
    - Training/Validation Split
    - Shapes Verification
