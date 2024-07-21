@@ -18,8 +18,8 @@ This repository contains the code and accompanying materials for my thesis proje
 - `Preprocessing_and_7_Muscle_Identification.ipynb`: OG code: Data Loading, Visualisation, Preprocessing, TFRecords Creation, Model Training and Results Visualisation. 
 
 ## Hydra Script
-- `HYDRA_Script_7_Muscle_Identification.py`: Script to run the model on Hydra.)
-- `submit.sh`: Submit script used to run the model's job on hydra &#40;super helpful as packages on hydra are tricky!&#41; )
+- `HYDRA_Script_7_Muscle_Identification.py`: Script to run the model on Hydra.
+- `submit.sh`: Submit script used to run the model's job on hydra &#40;super helpful as packages on hydra are tricky!&#41; 
 
 ## Notebook Structure 
 - Generating dataframes from the EMG csv files 
